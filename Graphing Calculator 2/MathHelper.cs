@@ -1,6 +1,5 @@
 ﻿public static class MathHelper
 {
-    //rap
     #region Public Constants
     public const double Tau = 6.2831853071795862;
     public const double PI = 3.1415926535897931;
@@ -15,7 +14,6 @@
     public const double SinPIOver3 = 0.8660254037844386;
     #endregion
     #region Public Static Methods
-    //map
     public static double Abs(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -28,7 +26,6 @@
         }
         return input;
     }
-    //map
     public static double ACos(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -45,7 +42,6 @@
         }
         return System.Math.Acos(input);
     }
-    //map
     public static double ASin(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -62,7 +58,6 @@
         }
         return System.Math.Asin(input);
     }
-    //map
     public static double ATan(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -71,7 +66,6 @@
         }
         return System.Math.Atan(input);
     }
-    //map
     public static double Cbrt(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -84,7 +78,6 @@
         }
         return System.Math.Pow(input, 0.33333333333333331);
     }
-    //map
     public static double Ceil(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -93,7 +86,6 @@
         }
         return System.Math.Ceiling(input);
     }
-    //map
     public static double Clamp(double input, double min, double max)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -122,7 +114,6 @@
         }
         return input;
     }
-    //map
     public static double Clamp01(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -139,7 +130,6 @@
         }
         return input;
     }
-    //map
     public static double LoopClamp(double input, double min, double max)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -165,7 +155,6 @@
         double span = max - min;
         return input - (System.Math.Floor((input - min) / span) * span);
     }
-    //map
     public static double LoopClamp01(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -174,7 +163,6 @@
         }
         return input - System.Math.Floor(input);
     }
-    //map
     public static double PingPongClamp(double input, double min, double max)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -212,7 +200,6 @@
         }
         return min + (input - (loopCount * (max - min)));
     }
-    //map
     public static double PingPongClamp01(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -234,7 +221,6 @@
         }
         return input - loopCount;
     }
-    //map
     public static double Cos(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -243,7 +229,6 @@
         }
         return System.Math.Cos(input);
     }
-    //map
     public static double Rem(double dividend, double divisor)
     {
         if (dividend is double.NaN || dividend is double.PositiveInfinity || dividend is double.NegativeInfinity)
@@ -269,7 +254,6 @@
         }
         return dividend - (quotient * divisor);
     }
-    //map
     public static double Exp(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -278,7 +262,6 @@
         }
         return System.Math.Exp(input);
     }
-    //map
     public static double Floor(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -287,7 +270,6 @@
         }
         return System.Math.Floor(input);
     }
-    //map
     public static double Ln(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -300,7 +282,6 @@
         }
         return System.Math.Log(input);
     }
-    //map
     public static double Log(double input, double logBase)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -325,7 +306,6 @@
         }
         return System.Math.Log(input, logBase);
     }
-    //map
     public static double Log2(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -338,7 +318,6 @@
         }
         return System.Math.Log(input, 2);
     }
-    //map
     public static double Log10(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -351,7 +330,6 @@
         }
         return System.Math.Log(input, 10);
     }
-    //map
     public static double Max(double a, double b)
     {
         if (a is double.NaN || a is double.PositiveInfinity || a is double.NegativeInfinity)
@@ -368,7 +346,6 @@
         }
         return a;
     }
-    //map
     public static double Min(double a, double b)
     {
         if (a is double.NaN || a is double.PositiveInfinity || a is double.NegativeInfinity)
@@ -385,7 +362,6 @@
         }
         return a;
     }
-    //map
     public static double Pow(double powBase, double exponent)
     {
         if (powBase is double.NaN || powBase is double.PositiveInfinity || powBase is double.NegativeInfinity)
@@ -402,7 +378,6 @@
         }
         return System.Math.Pow(powBase, exponent);
     }
-    //map
     public static double Recip(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -415,7 +390,6 @@
         }
         return 1 / input;
     }
-    //map
     public static double Round(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -424,7 +398,14 @@
         }
         return System.Math.Round(input);
     }
-    //map
+    public static int RoundToInt(double input)
+    {
+        if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
+        {
+            throw new System.Exception("input must be a real number.");
+        }
+        return (int)Round(input);
+    }
     public static double Sign(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -441,7 +422,6 @@
         }
         return 1;
     }
-    //map
     public static double Sin(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -450,7 +430,6 @@
         }
         return System.Math.Sin(input);
     }
-    //map
     public static bool IsInt(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -459,7 +438,6 @@
         }
         return input == System.Math.Floor(input);
     }
-    //map
     public static double Sqrt(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -468,7 +446,6 @@
         }
         return System.Math.Sqrt(input);
     }
-    //map
     public static double Tan(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -477,7 +454,6 @@
         }
         return System.Math.Tan(input);
     }
-    //map
     public static double ConstInterp(double input, double min, double max)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -498,7 +474,6 @@
         }
         return min + (System.Math.Floor(input + 0.5) * (max - min));
     }
-    //map
     public static double ConstLoopInterp(double input, double min, double max)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -537,7 +512,6 @@
             return max;
         }
     }
-    //map
     public static double ConstPingPongInterp(double input, double min, double max)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -576,7 +550,6 @@
             return max;
         }
     }
-    //map
     public static double LinInterp(double input, double min, double max)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -597,7 +570,6 @@
         }
         return min + (input * (max - min));
     }
-    //map
     public static double LinLoopInterp(double input, double min, double max)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -619,7 +591,6 @@
         input = input - System.Math.Floor(input);
         return min + (input * (max - min));
     }
-    //map
     public static double LinPingPongInterp(double input, double min, double max)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -657,7 +628,6 @@
         }
         return min + ((input - loopCount) * (max - min));
     }
-    //map
     public static double SinInterp(double input, double min, double max)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -681,7 +651,6 @@
         double inputFloor = System.Math.Floor(input);
         return (halfRange * System.Math.Sin((input - inputFloor - 0.5) * PI)) + halfRange + min + (inputFloor * range);
     }
-    //map
     public static double SinLoopInterp(double input, double min, double max)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -705,7 +674,6 @@
         double inputFloor = System.Math.Floor(input);
         return (halfRange * System.Math.Sin((input - inputFloor - 0.5) * PI)) + halfRange + min;
     }
-    //map
     public static double SinPingPongInterp(double input, double min, double max)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -729,7 +697,6 @@
         double inputFloor = System.Math.Floor(input);
         return (halfRange * System.Math.Sin((input - 0.5) * PI)) + halfRange + min;
     }
-    //map
     public static double Csc(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -738,7 +705,6 @@
         }
         return 1 / System.Math.Sin(input);
     }
-    //map
     public static double Sec(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -747,7 +713,6 @@
         }
         return 1 / System.Math.Cos(input);
     }
-    //map
     public static double Cot(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -756,7 +721,6 @@
         }
         return 1 / System.Math.Tan(input);
     }
-    //map
     public static double ACsc(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -769,7 +733,6 @@
         }
         return System.Math.Asin(1 / input);
     }
-    //map
     public static double ASec(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -782,7 +745,6 @@
         }
         return System.Math.Acos(1 / input);
     }
-    //map
     public static double ACot(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -791,7 +753,6 @@
         }
         return System.Math.Atan(1 / input);
     }
-    //map
     public static double Fact(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -814,7 +775,6 @@
         }
         return output;
     }
-    //map
     public static double Sqr(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -823,7 +783,6 @@
         }
         return input * input;
     }
-    //map
     public static double Cube(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -832,7 +791,6 @@
         }
         return input * input * input;
     }
-    //map
     public static double MinMag(double a, double b)
     {
         if (a is double.NaN || a is double.PositiveInfinity || a is double.NegativeInfinity)
@@ -873,7 +831,6 @@
         }
         return a;
     }
-    //map
     public static double MaxMag(double a, double b)
     {
         if (a is double.NaN || a is double.PositiveInfinity || a is double.NegativeInfinity)
@@ -914,7 +871,6 @@
         }
         return a;
     }
-    //map
     public static double CeilMag(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -927,7 +883,6 @@
         }
         return System.Math.Ceiling(input);
     }
-    //map
     public static double FloorMag(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -940,7 +895,6 @@
         }
         return System.Math.Floor(input);
     }
-    //map
     public static bool IsRealNumber(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -949,7 +903,6 @@
         }
         return true;
     }
-    //map
     public static double RadToDegAcc(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -958,7 +911,6 @@
         }
         return (input * 180) / PI;
     }
-    //map
     public static double DegToRadAcc(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -967,7 +919,6 @@
         }
         return (input * PI) / 180;
     }
-    //map
     public static double AngleClamp(double input)
     {
         if (input is double.NaN || input is double.PositiveInfinity || input is double.NegativeInfinity)
@@ -976,7 +927,6 @@
         }
         return input - (System.Math.Floor(input / Tau) * Tau);
     }
-    //map
     public static double AngleNonLoopDif(double a, double b)
     {
         double dif = a - b;
